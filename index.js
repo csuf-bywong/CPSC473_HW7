@@ -2,6 +2,7 @@
 var http = require("http");
 var fs = require("fs");
 var extract = require("./extract");
+const mime = require("mime"); // detect file extensions
 
 var handleError = function (err, res) {
   res.writeHead(404); // write eror to browser
@@ -19,6 +20,11 @@ var server = http.createServer(function(req, res) {
       handleError(err, res);
       return;
     } else {
+      var mediaType = mime.getType(filePath);
+      // set header to type detected
+      //res.setHeader("Content-Type", "text/html"); // MIME types
+      res.setHeader("Content-Type", mediaType);
+      console.log(mediaType);
       res.end(data);
     }
   });
