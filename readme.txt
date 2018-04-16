@@ -1,25 +1,17 @@
 CPSC 473-02
-Chattrbox - Assignment 5
+Chattrbox - Assignment 7
 Prof Avery
 
 Author: Belinda Wong
 
-✓ Files placed in the app/ directory can be viewed at http://localhost:3000 when index.js is running
-✓ Invalid URLs beginning with http://localhost:3000 result in HTTP 404 and the contents of app/error.html.
-✓ Files served from the app/ directory have the correct MIME type.
-✓ When index.js is running, chats can be held on ws://localhost:3001 as shown in Figure 16.4
-✓ The /topic command works as described in Section (5) above.
-✓ An .eslintrc.js file is present in the root of the repository and all issues detected by linter-eslint have been fixed
-✓ HTML, CSS, and JavaScript code have been reformatted with the atom-beautify plugin
-✓ Project directory pushed to new GitHub repository listed above
-✓ Project directory has been pushed using a GitHub client, not by manually dragging-and-dropping files onto the GitHub web page.
-
-I honestly can't tell you how many times I had trouble following the textbook.
-Nodejs installed on this vm was version 4.2.6 and couldn't run the code from
-textbook without error message stating that the version is known to break npm.
-Uninstalling and reinstalling nodejs multiple times.  Installing through nvm
-manager.  Eventually I got it to work, but so many frustrating hours were spent
-trying to detect the problem and solving it.  I even installed a new vm with Ubuntu
-instead of the Xubuntu vm I'm currently using.  It didn't work on the Ubuntu vm,
-so I gave that up.  I spent more hours trying to fix it so it would work on
-Xubuntu vm.  So painful and stressful this assignment was.  (sadness)
+✓
+When npm watch is running, Chattrbox can be viewed at http://localhost:3000
+Chattrbox pages use HTML and CSS from front-end-resources.zip
+package.json and .babelrc have been created.
+Multiple clients can connect to http://localhost:3000 and participate in a chat
+Chat messages show up in all connected clients in real-time
+An .eslintrc.js file is present in the root of the repository and has been modified to allow ES6 syntax
+All issues detected by linter-eslint have been fixed
+HTML, CSS, and JavaScript code have been reformatted with the atom-beautify pluging
+Project directory pushed to new GitHub repository listed above
+Project directory has been pushed using a GitHub client, not by manually dragging-and-dropping files onto the GitHub web page
