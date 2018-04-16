@@ -11,6 +11,7 @@ body {
   height: 100%;
   flex-direction: column;
 }
+
 .chat-messages {
   flex: 3;
   overflow-y: auto;
@@ -43,9 +44,10 @@ ul, ul.panel-body {
 
 .me {
   /* justify-content: flex-end; */
-  flex-direction: row-reverse;      }
+  flex-direction: row-reverse;
+}
 
-.me img{
+.me img {
   padding-right: 0;
   padding-left: 1em;
 }
@@ -62,7 +64,7 @@ ul, ul.panel-body {
   display: block;
 }
 
-.message-username + .timestamp {
+.message-username+.timestamp {
   padding-left: 8px;
 }
 
@@ -70,4 +72,3 @@ ul, ul.panel-body {
   font-style: italic;
   /*        display: block; */
 }
-
